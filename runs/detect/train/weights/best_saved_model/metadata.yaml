@@ -1,0 +1,33 @@
+description: Ultralytics best model trained on /content/datasets/TA-23/data.yaml
+author: Ultralytics
+license: AGPL-3.0 https://ultralytics.com/license
+date: '2024-07-23T05:51:39.266945'
+version: 8.0.196
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: ayam bakar
+  1: ayam goreng
+  2: bakso
+  3: capcay
+  4: donat
+  5: ikan bakar
+  6: ikan goreng
+  7: kentang goreng
+  8: kentang rebus
+  9: nasi
+  10: puding
+  11: rendang
+  12: roti tawar
+  13: sate
+  14: sop
+  15: tahu goreng
+  16: telur ceplok
+  17: telur dadar
+  18: telur rebus
+  19: tempe goreng
+  20: tumis kangkung

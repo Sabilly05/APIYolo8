@@ -94,7 +94,7 @@
                     additionalInfoTableBody.innerHTML = '';
 
                     if (data.detected_img_path) {
-                        detectedImg.src = data.detected_img_path;
+                        detectedImg.src = `${data.detected_img_path}?t=${new Date().getTime()}`;
                         detectedImg.style.display = "block";
                     }
 

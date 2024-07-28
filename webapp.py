@@ -6,6 +6,8 @@ import os
 from ultralytics import YOLO
 import pandas as pd
 import logging
+import time
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -33,6 +35,8 @@ def predict_img():
             if 'file' in request.files:
                 f = request.files['file']
                 basepath = os.path.dirname(__file__)
+                timestamp= int(time.time())
+                filename= f"{timestamp}_{secure_filename(f.filename)}"
                 filepath = os.path.join(basepath, UPLOAD_FOLDER, f.filename) # type: ignore
                 f.save(filepath)
                 
@@ -55,11 +59,12 @@ def predict_img():
                             additional_info.append(info)
 
                     # Save the detected image with a generic name
-                    detected_img_path = os.path.join(DETECT_FOLDER, 'image0.jpg')
+                    detected_img_filename = f"detected_{filename}"
+                    detected_img_path = os.path.join(DETECT_FOLDER, detected_img_filename)
                     cv2.imwrite(detected_img_path, detections[0].plot())
 
                     # Full URL to the detected image
-                    full_detected_img_path = f"http://{request.host}/detect/image0.jpg"
+                    full_detected_img_path = f"http://{request.host}/detect/{detected_img_filename}"
 
                     return jsonify({'labels': labels, 'filename': f.filename, 'detected_img_path': full_detected_img_path, 'additional_info': additional_info})
         except Exception as e:
