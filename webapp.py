@@ -22,7 +22,7 @@ os.makedirs(DETECT_FOLDER, exist_ok=True)
 food_info = pd.read_csv('food.csv')
 
 def get_food_info(label):
-    info = food_info[food_info['Makanan (Per 100g)'].str.lower() == label.lower()]
+    info = food_info[food_info['Makanan'].str.lower() == label.lower()]
     if not info.empty:
         return info.to_dict(orient='records')[0]
     else:

@@ -63,7 +63,7 @@
                 <table id="additional-info">
                     <thead>
                         <tr>
-                            <th>Makanan (Per 100g)</th>
+                            <th>Makanan</th>
                             <th>Karbo (g)</th>
                             <th>Protein (g)</th>
                             <th>Lemak (g)</th>
@@ -113,7 +113,7 @@
 
                     data.additional_info.forEach(info => {
                         const newRow = additionalInfoTableBody.insertRow();
-                        newRow.insertCell().textContent = info['Makanan (Per 100g)'];
+                        newRow.insertCell().textContent = info['Makanan'];
                         newRow.insertCell().textContent = `${info.Karbo} g`;
                         newRow.insertCell().textContent = `${info.Protein} g`;
                         newRow.insertCell().textContent = `${info.Lemak} g`;
