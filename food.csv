@@ -1,22 +1,22 @@
-﻿Makanan (Per 100g),Karbo,Protein,Lemak,Range Kalori
-Nasi,45.02,3.91,0.36,205
-Roti tawar,50.61,7.64,3.29,266
-Kentang rebus,15.70,1.46,0.08,68
-Kentang goreng,19.15,2.21,7.77,152
-Telur rebus,0.56,6.26,5.28,77
-Telur dadar,1.15,6.81,7.14,98
-Telur ceplok,0.40,6.27,7.04,92
-Tahu goreng,1.36,2.23,2.62,35
-Tempe goreng,7.80,20.00,28.00,336 
-Ayam bakar,0,16.79,8.36,147
-Ayam goreng,4.00,15.00,17.00,230
-Ikan bakar,0.31,25.53,1.33,132
-Ikan goreng,14.00,11.00,10.00,190
-Bakso,7.58,12.41,13.16,202
-Rendang ,7.80,22.60,7.90,193
-Tumis kangkung,3.10,2.60,2.70,39
-Sop,1.00,1.30,2.00,27
-capcay,4.20,5.80,6.30,97
-Donat,22.86,2.34,10.30,192
-Puding,25.99,3.05,4.52,157
-Sate,4.87,19.54,14.82,225
+﻿Makanan (per100g),Karbo,Protein,Lemak,Range Kalori
+Nasi,39.8g,3g,0.3g,180kal
+Roti tawar,49.8g,8g,1.35g,248kal
+Kentang rebus,20.13g,1.87g,0.1g,87kal
+Kentang goreng,35.6g,3.48g,14.06g,274kal
+Telur rebus,0.56g,6.26g,5.28g,77kal
+Telur dadar,1.4g,16.3g,19.4g,251kal
+Telur ceplok,0.88g,13.63g,15.31g,201kal
+Tahu goreng,2.5g,9.7g,8.5g,115kal
+Tempe goreng,7.8g,20g,28g,336kal 
+Ayam bakar,0g,25.01g,6.63g,167kal
+Ayam goreng,0.9g,35.1g,14.8g,148kal
+Ikan bakar,0.3g,21.94g,3.4g,126kal
+Ikan goreng,0g,46.9g,23.9g,416kal
+Bakso,16.4g,5.3g,3g,114kal
+Rendang,7.8g,22.6g,7.9g,193kal
+Tumis kangkung,3.9g,2.56g,8.71g,98kal
+Sop,1g,1.3g,2g,27kal
+capcay,9.67g,1.58g,2.59g,67kal
+Donat,57.4g,4.5g,19.9g,417kal
+Puding,26g,3.05g,4.52g,157kal
+Sate,4.87g,19.54g,14.82g,225kal
