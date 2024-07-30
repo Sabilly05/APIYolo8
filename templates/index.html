@@ -67,7 +67,7 @@
                             <th>Karbo (g)</th>
                             <th>Protein (g)</th>
                             <th>Lemak (g)</th>
-                            <th>Range Kalori (kkal)</th>
+                            <th>Range Kalori (kal)</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -79,7 +79,7 @@
                             <th id="total-karbo">0 g</th>
                             <th id="total-protein">0 g</th>
                             <th id="total-lemak">0 g</th>
-                            <th id="total-kalori">0 kkal</th>
+                            <th id="total-kalori">0 kal</th>
                         </tr>
                     </thead>
                 </table>
@@ -117,7 +117,7 @@
                         newRow.insertCell().textContent = `${info.Karbo} g`;
                         newRow.insertCell().textContent = `${info.Protein} g`;
                         newRow.insertCell().textContent = `${info.Lemak} g`;
-                        newRow.insertCell().textContent = `${info['Range Kalori']} kkal`;
+                        newRow.insertCell().textContent = `${info['Range Kalori']} kal`;
 
                         totalKarbo += parseFloat(info.Karbo);
                         totalProtein += parseFloat(info.Protein);
@@ -128,7 +128,7 @@
                     document.getElementById('total-karbo').textContent = `${totalKarbo.toFixed(2)} g`;
                     document.getElementById('total-protein').textContent = `${totalProtein.toFixed(2)} g`;
                     document.getElementById('total-lemak').textContent = `${totalLemak.toFixed(2)} g`;
-                    document.getElementById('total-kalori').textContent = `${totalKalori} kkal`;
+                    document.getElementById('total-kalori').textContent = `${totalKalori} kal`;
                 });
             });
         </script>
