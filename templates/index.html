@@ -67,7 +67,7 @@
                             <th>Karbo (g)</th>
                             <th>Protein (g)</th>
                             <th>Lemak (g)</th>
-                            <th>Range Kalori (kal)</th>
+                            <th>Estimasi Kalori (kal)</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -117,12 +117,12 @@
                         newRow.insertCell().textContent = `${info.Karbo} g`;
                         newRow.insertCell().textContent = `${info.Protein} g`;
                         newRow.insertCell().textContent = `${info.Lemak} g`;
-                        newRow.insertCell().textContent = `${info['Range Kalori']} kal`;
+                        newRow.insertCell().textContent = `${info['Estimasi Kalori']} kal`;
 
                         totalKarbo += parseFloat(info.Karbo);
                         totalProtein += parseFloat(info.Protein);
                         totalLemak += parseFloat(info.Lemak);
-                        totalKalori += parseFloat(info['Range Kalori']);
+                        totalKalori += parseFloat(info['Estimasi Kalori']);
                     });
 
                     document.getElementById('total-karbo').textContent = `${totalKarbo.toFixed(2)} g`;
